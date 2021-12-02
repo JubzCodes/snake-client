@@ -2,7 +2,7 @@ const net = require("net");
 
 const connect = function () {
   const conn = net.createConnection({
-    host: '165.227.47.243',
+    host: '10.0.2.15',
     port: 50541,
   });
 
@@ -14,11 +14,11 @@ const connect = function () {
   conn.write("Name: JKD")
   //conn.write("Move: up")
 });
-conn.on("data", (data) => {
-  console.log(data)
-});
 
-  return conn;
+return conn;
 };
 
 module.exports = {connect};
+// conn.on("data", (data) => {
+//   console.log(data)
+// });
