@@ -13,7 +13,7 @@ const setupInput = function (conn) {
 const handleUserInput = function (key) {
   switch(key) {
   case '\u0003':
-    console.log("disconnected from server")
+    console.log("Disconnected from server!")
     process.exit();
     break;
   case 'w':
