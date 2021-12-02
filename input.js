@@ -27,6 +27,18 @@ const handleUserInput = function (key) {
     break;
   case 'd':
     connection.write("Move: right")
+    break;
+  case '1':
+    connection.write("Say: noo!")
+    break;
+  case '2':
+    connection.write("Say: yum!")
+    break;
+  case '3':
+    connection.write("Say: you next!")
+    break;
+  case '4':
+    connection.write("Say: surrender!")
  }};
 
 module.exports = { setupInput };
